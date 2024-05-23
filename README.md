@@ -6,4 +6,8 @@ future class and packaged_task, the development of the final version of the thre
 
 When using primary, compile first `g++ -fPIC -shared threadpool.cpp -o libtdpool.so -std=c++17`
 
+Put the .so library in the /usr/local/bin directory,.h in the /usr/local/include, write your own dynamic library configuration file
+
+To compile test files, you need link libraries and thread libraries
+
 `g++ test.cpp -std=c++17 -ltdpool -lpthread`
